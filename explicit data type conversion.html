@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> explicit data type conversion </title>
+</head>
+<body>
+<script type="text/javascript">
+
+  var str = "100"; // str에 문자열을 변수로 할당
+  document.writeln(typeof str); // 현재 타입을 확인
+  str = Number(str); // str의 문자열을 number형태로 형변환
+  document.writeln(typeof str); // 현재 타입을 확인
+
+  var num = 100; // num에 number 형태 변수를 할당
+  document.writeln(typeof num); // 현재 타입 확인
+  num = String(num); //  num 을 문자열 형태로 형변환
+  document.writeln(typeof num); // 현재 상태 확인
+
+  document.writeln(parseInt(5.2)); //실수를 정수로 형변환
+  document.writeln(parseInt("123.456")); // 문자열 정수로 변환
+  document.writeln(parseInt("123Km")); // 문자열을 정수로 변환
+  document.writeln(parseInt("W123Km")); // 접두사는 정수로 구분 안됨, result = NaN
+
+  document.writeln(parseFloat(5.2));
+  document.writeln(parseFloat("123.456")); // 문자열을 실수로 변환
+  document.writeln(parseFloat("123Km")); // 문자열을 실수로 변환
+  document.writeln(parseFloat("W123Km")) // 접두사의 문자는 구분 불가
+
+</script>
+
+</body>
+</html>
