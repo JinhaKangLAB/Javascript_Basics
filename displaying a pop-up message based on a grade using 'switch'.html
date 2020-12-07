@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<title> Displaying a pop-up message based on a grade using 'switch'</title>
+</head>
+<body>
+<script type="text/javascript">
+var grade = prompt("Enter your grade in capital letter.");
+switch(grade){
+  case "A" :
+  case "B" :
+  document.writeln("Great job!");
+  break;
+
+  case "C" :
+  case "D" :
+  document.writeln("Try harder!");
+  break;
+
+  case "E" :
+  case "F" :
+  document.writeln("Please retake the class next semester!");
+  break;
+
+  default :
+  document.writeln("You enter the wrong grade.")
+}
+</script>
+</body>
+</html>
