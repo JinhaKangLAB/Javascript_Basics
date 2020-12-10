@@ -6,10 +6,13 @@
 </head>
 <body>
 <script>
-  function getSquareVolume(bottom, height ){
-    return bottom * height;
+  function getCubeVolume(bottom, height, depth){
+    return bottom * height * depth;
   }
-  document.writeln("Square Volume = " + getSquareVolume(5,3));
+  var bottom = 5;
+  var height = 3;
+  var depth = 6;
+  document.writeln("Cube Volume = " + getCubeVolume(bottom,height,depth));
 </script>
 </body>
 </html>
