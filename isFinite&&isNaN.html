@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<title> isFinite && isNaN </title>
+</head>
+<body>
+<script>
+var num1 = 1/0; //infinte
+var num2 = 2;
+
+alert("1/0 : finite? : " + isFinite(num1));
+alert("2 : finite? : " + isFinite(num2));
+//infinite : false, finite : true
+var num3 = 3;
+var num4 = "character";
+
+alert("Is 3 a number? : " + isNaN(num3));
+alert("character? : " + isNaN(num4));
+// number : false, character : true
+
+
+</script>
+</body>
+</html>
