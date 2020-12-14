@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+  <title> Guessing a number or a character </title>
+</head>
+<body>
+<script>
+
+var value = prompt("Please insert the value");
+var character = isNaN(value);
+
+var result = character ? "character" : "number";
+document.writeln("Inserted " + value + " is a " + result + ".");
+
+</script>
+</body>
+</html>
