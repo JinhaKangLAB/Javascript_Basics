@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<title> Creating an object (1) </title>
+</head>
+<body>
+<script>
+var dog = {};
+dog.name = "Mickey";
+dog['age'] = 6;
+dog["breed"] = "poodle";
+dog['weight'] = 20;
+
+dog.run = function(){
+  alert("run.");
+};
+dog.eat = function(){
+  alert("eat")
+};
+dog.bark = function(){
+  alert("bark")
+};
+dog.sleep = function(){
+  alert("sleep")
+};
+
+for(var key in dog ){
+  alert(key + " = " + dog[key] + "\n");
+}
+
+dog.run();
+dog.eat();
+dog.bark();
+dog.sleep();
+
+</script>
+</body>
+</html>
