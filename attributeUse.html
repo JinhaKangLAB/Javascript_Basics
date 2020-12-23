@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<title>attributeUse</title>
+<script>
+var dog = {
+    bread : 'Poodle',
+    age : 10,
+    name : 'Grizzly'
+};
+
+Object.defineProperty(dog, 'country',{
+    value : 'France',
+    writable : true,
+    enumerable : false,
+    configurable : false
+} );
+
+for(var key in dog){
+    document.write(key + " = " + dog[key] + "<br>");
+}
+
+dog.country = 'German';
+alert(dog.country);
+
+
+</script>
+</head>
+<body>
+</body>
+</html>
