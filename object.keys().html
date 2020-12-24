@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<title>Object.keys()</title>
+<script>
+//Object.keys()
+var dog = {
+    breed : 'Poodle',
+    age : 10,
+    name : "Pudong"
+};
+
+Object.defineProperty(dog, "country", {
+  writable : true,
+  enumerable : false,
+  configurable : false
+} );
+
+var keys = Object.keys(dog);
+for(var key in keys){
+  document.write(keys[key] + "<br>");
+}
+s
+</script>
+</head>
+<body>
+</body>
+</html>
