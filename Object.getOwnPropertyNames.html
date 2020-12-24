@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<title>Object.getOwnPropertyNames</title>
+<script>
+var dog = {
+    breed : 'Poodle',
+    age : 10,
+    name : "Pudong"
+};
+
+Object.defineProperty(dog, "country", {
+  writable : true,
+  enumerable : false,
+  configurable : false
+} );
+
+var names = Object.getOwnPropertyNames(dog);
+for(var index in names){
+    document.write(names[index]+"<br>");
+}
+
+</script>
+</head>
+<body>
+</body>
+</html>
