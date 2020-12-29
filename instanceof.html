@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<title> instanceof </title>
+<script>
+function Dog(breed, age, name, country){
+this.breed = breed;
+this.age = age;
+this.name = name;
+this.country = country;
+
+this.getDogInfo = function(){
+  return "breed = " + this.breed + ", age =" + this.age + ", name = " + this.name + " ,country = " + this.country;
+};
+this.getAge = function(){
+  return this.age;
+};
+}
+
+var dog1 = new Dog("Poodle", 10, "Poodly", "France");
+alert(dog1 instanceof Dog);
+
+function Car(name,year){
+  this.name = name;
+  this.year = year;
+}
+
+var car1 = new Car("Sonata", 2017);
+alert(car1 instanceof Dog);
+
+</script>
+</head>
+<body>
+</body>
+</html>
