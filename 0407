@@ -1,0 +1,60 @@
+//Numebers and Characters
+<!---<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Numbers and Characters</title>
+    <style>
+      h1{color:red;}
+    </style>
+    <script> //head and body both
+      //Numbers and Characters
+      //Data type
+      // "hello" //chracter data
+      // 'hello' //same charater data
+      // 123 //number data, no""
+      //alert(100%5) // +,-,*,/,%
+      //alert("Hello"+" "+"I'm Jinha Kang."); // no space between words.'space' is also considered as characters.
+      //Math.pow(3,2); // 3의 제곱 3*3
+      //blah() : tool
+      //alert(typeof("hi"));
+      //character data type : string
+      //numver data type : number
+      //alert(typeof(1));
+      //alert(typeof("1"+1));//string
+      alert("Hi my name is 'Jinha Kang'."); //"''" -> string
+    </script>
+  </head>
+  <body>
+    <h1>title</h1>
+  </body>
+</html> --->
+
+//Variable
+<!---<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Variable</title>
+    <script>
+      var a = 1;//put value on the right to left side. it dosen't mean that a and 1 are the same.
+      a = 2;
+    //  alert(a);
+    //  var b = 3;
+      var c = "hi";
+    //  alert(typeof(a+b));
+    //alert(a+c);
+    //alert(typeof(a+c)); // data type : string
+      var b1 = "Hello";
+    //  alert(b1);
+      var d = 200;
+    //  alert(d+1);
+    //  alert(((d+1)*3));
+    //  alert(((d+23)*4)/2);
+    console.log(d); // record`
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html> --->
