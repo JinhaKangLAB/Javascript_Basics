@@ -55,7 +55,7 @@
     // 카멜케이스 방식 userName
     var userName = prompt("Type your name."); //like scanf in C++, there are a lot of end users.
     //alert("Thanks for visiting "+ name);
-    var age = prompt("How old are you?");
+    var age = prompt("How old are you?"); //prompt only accpet character data type
     //alert(name + "'s age is "+ age);
     //alert(typeof(age)); //data which is collated using prompt is saved as string.
     document.write("<h1>반갑습니다 "+ userName +"님 올해 "+ age +"살 이시군요.</h1>"); //js consider <tag> as string type // data type is string
