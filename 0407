@@ -51,7 +51,7 @@
     //  alert(d+1);
     //  alert(((d+1)*3));
     //  alert(((d+23)*4)/2);
-    //console.log(d); // record
+    //console.log(d); // record, show in the console F12
     // 카멜케이스 방식 userName
     var userName = prompt("Type your name."); //like scanf in C++, there are a lot of end users.
     //alert("Thanks for visiting "+ name);
