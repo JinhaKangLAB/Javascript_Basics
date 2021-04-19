@@ -131,8 +131,16 @@
 // var c=0; //global variable, 글로벌 변수
 // console.log(c);
 // //변수의 유효범위 존 (scope)
-      
-      
+ 
+function a(callback){
+  callback();
+}
+
+function b(){
+  alert("test");
+}
+//a(b); //b function == variable, callback function //variable : number, string, and function
+a(funcion(){alert("test")})
     </script>
   </body>
 </html>
