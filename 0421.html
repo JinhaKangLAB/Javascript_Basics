@@ -34,10 +34,17 @@ function Person(userName,userScore){
   }
 }
 var person1 = new Person("Jinha",{
-  ko : 100,
-  en : 100,
-  ma : 100});
+  korean : 100,
+  english : 100,
+  math : 100});
+
+
+var person2 = new Person("Lee",{korean:90,english:90,math:90});
 person1.showScore();
+document.write("<br>");
+person2.showScore();
+
+
 
     </script>
   </body>
