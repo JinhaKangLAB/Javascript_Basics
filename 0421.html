@@ -27,8 +27,9 @@ function Person(userName,userScore){
   this.name = userName;
   this.score = userScore;
   this.showScore = function(){
+    document.write(this.name+"님의 성적은<br>")
     for(var key in this.score){
-      document.write(this.score[key]+"<br>")
+      document.write(key+"점수는"+this.score[key]+"<br>")
     }
   }
 }
