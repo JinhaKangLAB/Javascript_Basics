@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    ul{border:1px solid red;float:left;} //붕띄워서 배치 뒷공간이 비어있음, 다음 컨텐츠가 노멀플로우면 레이아웃 망침 clear:플로트 해제
+    </style>
+  </head>
+  <body>
+    <script>
+
+    for(var i=1;i<100;i++){
+      document.write("<ul>");
+        for(var j=1;j<10;j++){
+          document.write("<li>"+i+" x "+j+" = "+(i*j)+"</li>");
+        }
+      document.write("</ul>");
+    }
+    </script>
+  </body>
+</html>

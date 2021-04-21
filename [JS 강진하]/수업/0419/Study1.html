@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>array and object</title>
+  </head>
+  <body>
+      <script>
+      //array
+        //var phoneNumbers = [
+        // "010-1111-1111",
+        // "010-2222-2222",
+        // "010-3333-3333",
+        // "010-4444-4444"]; //varialbe : number,string,function,array  배열의 원소, 순차적
+        //alert(phoneNumbers[2]);
+        // document.write(phoneNumbers[0]+"<br>");
+        // document.write(phoneNumbers[1]+"<br>");
+        // document.write(phoneNumbers[2]+"<br>");
+        //phoneNumbers.length;
+        // for(var i=0;i<phoneNumbers.length;i++){
+        //   document.write(phoneNumbers[i]+"<br>");
+        // }
+
+
+        //Object
+        // var callFriNm = {
+        //   "Kang":"010-1111-1111", // Key : Value
+        //   "Jinha":"010-2222-2222",
+        //   "Lee":"010-3333-3333",
+        //   James:"010-4444-4444"
+        //   };
+          //alert(callFriNm["James"]);  // Method 1 like array
+          //alert(callFriNm.James); // Method 2
+          /*for(var key in callFriNm){
+            document.write(callFriNm[key]+"<br>")
+          }*/
+          /*for(var ks in callFriNm){
+            document.write(ks+" : "+callFriNm[ks]+"<br>")
+          }*/
+
+
+        // var person1 = {
+        //   name : "Jung",   //Key : Property, like varaible
+        //   phoneNumber : "010-2979-1111",
+        //   tall : 170,
+        //   introduce : function(){   // method : has function, property>method
+        //     document.write("Hello~~ I'm "+ this.name + ".");
+        //   },
+        //   introduceTall : function(){
+        //     document.write("My height is "+ this.tall + "cm.");
+        //   }
+        // }
+        // //alert(person.height);
+        // person1.introduce();
+        // person1.introduceTall();
+        //
+        // var person2 = {
+        //   name : "Lee",   //Key : Property, Method
+        //   phoneNumber : "010-222-2222",
+        //   tall : 185,
+        //   introduce : function(){   // method : has function, property>method, like varaible
+        //     document.write("Hello~~ I'm "+ this.name + "."); // this : 맥락
+        //   },
+        //   introduceTall : function(){
+        //     document.write("My height is "+ this.tall + "cm.");
+        //   }
+        // }
+        // person2.introduce();
+        // person2.introduceTall();
+
+        //-----------------------------------shorter version
+        // function Person(userName,userPhoneNumber,userTall){
+        //   this.name=userName;
+        //   this.phoneNumber=userPhoneNumber;
+        //   this.tall=userTall;
+        //   this.introduce=function(){
+        //     document.write("Hello~~ I'm "+ this.name + ".<br>");
+        //   }
+        //   this.introduceTall=function(){
+        //     document.write("My height is "+ this.tall + "cm.<br>");
+        //   }
+        // }
+        //
+        // var person1 = new Person("Jung","010-111-1111",170);
+        // var person2 = new Person("Lee","010-222-2222",166);
+        // var person3 = new Person("Park","010-333-3333",179);
+        // person1.introduce();
+        // person2.introduce();
+        // person3.introduce();
+        // person1.introduceTall();
+        // person2.introduceTall();
+        // person3.introduceTall();
+
+        // function Person(userName,userAge,userTall){
+        //   this.name = userName; //틀로 찍어내서 만들어질 대상, 객체, this의 맥락에 따라 다르다.
+        //   this.age = userAge; // 객체 , 객체틀 ; 이거는 해도 되고 안해도 됨
+        //   this.tall = userTall;
+        //   this.introduce = function(){
+        //     document.write("Hi"+ this.name + this.age + this.tall+"<br>");
+        //   }
+        // }
+        //
+        // var person1 = new Person("Jin",26,155);
+        // person1.introduce();
+
+        function Cat(catname,catage,cattall){
+          this.name = catname;
+          this.age = catage;
+          this.tall = cattall;
+          this.introduce = function(){
+          document.write("Hi I'm"+ " "+catname +" " + catage + cattall+"<br>");
+        } //fucntion은 익명함수
+      }
+       var cat1 = new Cat("Grizzly",3,50);
+       var cat2 = new Cat("Teddy",1,70);
+       cat1.introduce();
+       cat2.introduce();
+
+
+
+        //swiper API
+       //-------
+      </script>
+  </body>
+</html>

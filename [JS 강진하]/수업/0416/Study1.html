@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Function y=f(x)</title>
+  </head>
+  <body>
+    <script>
+      //--------making function 1
+       // function greeting(){
+       //     alert("Hello~");
+       // } // if you make a function -> function will automatically go on top, meaning this function doens't care the order. No need to bring the function after the function is stated.
+
+       //-------making funciton 2
+       // var greeting = function(){  //no name function : use only when there is a variable.
+       //   alert("Hello~");
+       // };
+      //greeting();
+
+      //Good thing for using function
+      //1. productivity is high.
+
+      //정의부, 선언부 able to recall a lot
+      // function countNumber()/*인자*/{/*블록*/
+      //   for(var i=0;i<10;i++){
+      //     document.write(i+"<br>");
+      //   }
+      // }
+      //
+      // //호출부
+      // countNumber();
+      // countNumber();
+      // countNumber();
+      // countNumber();
+
+    // function getMyName(){
+    //   return "Jinha";
+    //   //return 1.close the funtion, 2.bring the result out.
+    // }
+    // alert(getMyName());
+
+    // function getUserName(userName){
+    //     return userName;
+    // }
+    // var name = getUserName("Jinha Kang");
+    // alert(name);
+
+
+    // function add(a,b){
+    //   var result = a+b;
+    //   return result;
+    // }
+    // alert(add("Hi",5));
+
+    //사용자로부터 국어, 수학, 영어를 입력 받아서 평균이 90점 이상이면 A, 80 B, 70 C,  리턴하는 함수를 만들어보세요.
+
+//     function average(){
+//       var k = Number(prompt("Korean Score"));
+//       var m = Number(prompt("Math Score"));
+//       var e = Number(prompt("English Score"));
+//       var averageSc = (k+m+e)/3
+//       return averageSc;
+//     }
+//
+//     alert(average());
+//
+// //------------------------------
+//
+//     function average(k,m,e){
+//        var result = (k+m+e)/3;
+//        return result;
+//      }
+//      alert(average(Number(prompt("Korean")),Number(prompt("Math")),Number(prompt("English"))));
+
+
+     // function average(){
+     //   var k = Number(prompt("Korean Score"));
+     //   var m = Number(prompt("Math Score"));
+     //   var e = Number(prompt("English Score"));
+     //   var averageSc = (k+m+e)/3
+     //   return averageSc;
+     // }
+     //
+     // function showAver(averageSc){
+     //   document.write("Your Score is "+averageSc);
+     // }
+     // showAver(average());
+
+     // function average(){
+     //   var k = Number(prompt("Korean Score"));
+     //   var m = Number(prompt("Math Score"));
+     //   var e = Number(prompt("English Score"));
+     //   var averageSc = (k+m+e)/3
+     //   return averageSc;
+     // }
+     //
+     // function showAver(averageSc){
+     //   document.write("Your Score is "+averageSc);
+     // }
+     // showAver(average());
+
+// function average(){
+//   var k = Number(prompt("Korean Score"));
+//   var m = Number(prompt("Math Score"));
+//   var e = Number(prompt("English Score"));
+//   var averageSc = (k+m+e)/3
+//   var grade;
+//   if(averageSc>=90){
+//     grade = "A";
+//     return grade;
+//     }
+//   else if(averageSc>=80){
+//     grade = "B";
+//     return grade;
+//     }
+//   else if(averageSc>=70){
+//     grade = "C";
+//     return grade;
+//     }
+//   }
+// alert(average());
+
+// function sub(a,b){
+//   var result = a+b;
+//   return result;
+// }
+// function a(){
+//   var c=0; //temporary variable, 지역 변수
+// }
+// var c=0; //global variable, 글로벌 변수
+// console.log(c);
+// //변수의 유효범위 존 (scope)
+
+function a(callback){
+  callback();
+}
+
+function b(){
+  alert("test");
+}
+//a(b); //b function == variable, callback function //variable : number, string, and function
+a(funcion(){alert("test")})
+    </script>
+  </body>
+</html>
