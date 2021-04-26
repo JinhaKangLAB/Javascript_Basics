@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jquery Basic</title>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="./JS/main.js">
+      //$("선택할 태그의 태그명이나, 클래스명, 아이디명-css 선택자 방식")
+      //$("*").css("font-size","13px");
+      // $(document).ready(function(){
+      //     $("*").css("font-size","13px");
+      // });
+    </script>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>jquery</h1>
+      <h2 id="firstTitle">선택자</h2>
+      <h3 class="nextTitle">부모요소선택자</h3>
+      <div>
+        <p class="obj1">현재 id가 "obj1"인 요소를 기준으로, 부모 요소는 'div'요소입니다.</p>
+      </div>
+      <h3>자식요소선택자</h3>
+      <ul class="obj3">
+        <li>List 1</li>
+        <li class="theObj1">List 2</li>
+        <li>List 3</li>
+      </ul>
+      <h3>형 요소/이전요소 선택자</h3>
+      <ul>
+        <li>List 4</li>
+        <li class="obj4">List 5</li>
+        <li>List 6</li>
+      </ul>
+      <h3>동생 요소 선택자</h3>
+      <ul>
+        <li>List 7</li>
+        <li class="obj5">List 8</li>
+        <li>List 9</li>
+      </ul>
+      <h3>형제 요소들 선택자</h3>
+      <ul>
+        <li>List 4_1</li>
+        <li>List 10</li>
+        <li class="obj6">List 11</li>
+        <li>List 12</li>
+        <li>List 4_1</li>
+      </ul>
+
+      <script>
+
+      //  $("*").css("font-size","13px"); //inline 방식 1000점~~!!, Read from the top -> jquery should be placed at the bottom, otherwise, write as
+
+      </script>
+  </body>
+</html>
