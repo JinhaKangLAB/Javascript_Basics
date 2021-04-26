@@ -13,4 +13,11 @@
       $(".obj6").siblings().css({
       "text-align":"center",
       "color":"red"//선택 대상 제외 나머지 형제들을 리턴
+    });
+      //$(".obj3 > li:nth-of-type(1)").css("font-size","2em");  //eq 선택자
+      $(".obj3 > li").eq(0).css("font-size","2em");
+      $(".obj7",find("span").css("color","orange");
+      $("#firstTitle").html("<a href='#'>선택자</a>");
+
+      //$(".obj7").children(".obj6").children("span").css("color","orange");
   });
