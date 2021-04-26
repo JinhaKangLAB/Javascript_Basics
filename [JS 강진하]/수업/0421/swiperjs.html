@@ -18,6 +18,7 @@
     <li class="swiper-slide"><img src="./img/img2.jpg"></li>
     <li class="swiper-slide"><img src="./img/img3.jpg"></li>
     <li class="swiper-slide"><img src="./img/img4.jpg"></li>
+    <!--<div class="swiper-slide">Slide 3</div>-->
 
     </ul>
     <!-- If we need pagination -->
@@ -30,9 +31,32 @@
     <!-- If we need scrollbar -->
     <div class="swiper-scrollbar"></div>
   </div>
+  <button id="btnStop">STOP</button>
 
   <script>
-      const/*var*/ swiper = new Swiper('.swiper-container', {});
+      //const/*var*/ swiper = new Swiper('.swiper-container', {});
+      var swiper1 = new Swiper('.swiper-container', {
+  navigation: {//key.property
+        nextEl: '.swiper-button-next', //El : element, tag
+        prevEl: '.swiper-button-prev',
+        //function Swiper(classname,option){}
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+      },
+      loop: true,
+      slidesPerView: 3,
+      autoplay: {
+       delay: 1000,
+       disableOnInteraction: false,
+     },
+});
+//swiper1.autoplay.stop()
+    var btnStop = document.getElementById('btnStop');
+    btnStop.addEventListener('click',function(){
+      swiper1.autoplay.stop();
+    });
 </script>
   </body>
 </html>
