@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function(){ //callback function
     var switchstatus = false;
   //------------ON-------------
   $(".btn1").click(function(){

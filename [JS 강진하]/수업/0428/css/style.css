@@ -1,3 +1,3 @@
 /**{margin:0;padding:0;}*/
-.txt1{transition:all 2s linear 0s;}
-.txt1.a{background:blue;color:white;} /*20점*/
+.txt1{transition:all 2s linear 0s;} /*delay 0*/
+.txt1.a{background:blue;color:white;} /*20점, class가 txt1면서 동시에 class가 a인 대상을 동시에 클릭*/
