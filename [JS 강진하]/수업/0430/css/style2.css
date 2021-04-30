@@ -1,4 +1,8 @@
 *{margin:0;padding:0;}
 
 /*tabMenu1*/
-.tabMenu1{width:500px;height:500px;border:1px solid red;}
+.tabMenu1{width:500px;height:500px;border:1px solid red;position:relative;}
+.tabMenu1 dt{float:left;width:100px;height:60px;color:red;border:1px solid blue;}
+.tabMenu1 dt.on{background:blue;color:white;}
+.tabMenu1 dd{position:absolute;left:0;top:60px;width:100%;border:1px solid orange;display:none;} /*11점*/
+.tabMenu1 dd.on{display:block;} /*21점*/
