@@ -7,4 +7,11 @@ $(document).ready(function(){
    $(this).next().addClass("on");
  });
 
+
+$(".tab li").click(function(){
+  $(".tab li").removeClass("on");
+  $(this).addClass("on");
+  var a = $(this).index();
+  $(".des > p").eq(a).addClass("on");
+});
 });

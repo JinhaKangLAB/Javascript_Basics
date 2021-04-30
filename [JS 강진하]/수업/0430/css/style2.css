@@ -1,8 +1,17 @@
 *{margin:0;padding:0;}
 
 /*tabMenu1*/
-.tabMenu1{width:500px;height:500px;border:1px solid red;position:relative;}
+.tabMenu1{width:500px;height:300px;border:1px solid red;position:relative;}
 .tabMenu1 dt{float:left;width:100px;height:60px;color:red;border:1px solid blue;}
 .tabMenu1 dt.on{background:blue;color:white;}
 .tabMenu1 dd{position:absolute;left:0;top:60px;width:100%;border:1px solid orange;display:none;} /*11점*/
 .tabMenu1 dd.on{display:block;} /*21점*/
+
+/*tabMenu2*/
+ul{list-style: none;}
+.tabMenu2{width:500px;}
+.tab li{display:flex;}
+.tab li{padding:6px 14px; border:1px solid black;cursor:pointer;}
+.tab li.on{background:black;color:white;}
+.des p{display:none;}
+.des p.on{display:block;}
