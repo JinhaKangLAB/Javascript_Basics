@@ -12,6 +12,7 @@ $(".tab li").click(function(){
   $(".tab li").removeClass("on");
   $(this).addClass("on");
   var a = $(this).index();
+  $(".des > p").removeClass("on");
   $(".des > p").eq(a).addClass("on");
 });
 });
