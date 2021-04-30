@@ -1,0 +1,10 @@
+$(document).ready(function(){
+
+ $(".tabMenu1 > dt").click(function(){
+  $(".tabMenu1 > dt").removeClass("on");
+   $(this).addClass("on");
+   $(".tabMenu1 > dd").removeClass("on");
+   $(this).next().addClass("on");
+ });
+
+});
