@@ -10,8 +10,14 @@
 /*tabMenu2*/
 ul{list-style: none;}
 .tabMenu2{width:500px;}
-.tab li{display:flex;}
+.tab{display:flex;}
 .tab li{padding:6px 14px; border:1px solid black;cursor:pointer;}
 .tab li.on{background:black;color:white;}
 .des p{display:none;}
 .des p.on{display:block;}
+
+/*tabMenu3*/
+.tabMenu3{width:500px;border:1px solid red;}
+.tab3{display:flex;}
+.tab3 > li {padding:6px 14px;border:1px solid black;}
+.des3{border:1px solid orange;min-height:200px;} /*height: 기본 값은 auto, 넘치면 흘러넘침, min-height:평상시 200px 유지 넘어서면 맞춰서 늘어남*/
