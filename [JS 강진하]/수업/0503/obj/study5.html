@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>객체5-연습</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="http://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="./js/person.js"></script>
+    <script src="./js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>당신에 대해 알아볼까요?</h1>
+      <form onsubmit="return false;" method="post" name="searchForm">
+        <input type="hidden" name="" value="">
+        <ul>
+          <li><label for="userName">이름</label><input type="text" id="userName" placeholder="이름을 입력해 주세요"></li>
+          <li><label for="userAge">나이</label><input type="number" id="userAge" placeholder="나이를 입력해 주세요"></li>
+          <li><label for="userGender">성별</label><input type="text" id="userGender" placeholder="성별을 입력해 주세요"></li>
+        </ul>
+        <div class="btn_div">
+          <button class="btn_State">기본신상 알아보기</button>
+          <button class="btn_Skil">주특기 알아보기</button>
+          <button class="btn_Character">성품 알아보기</button>
+          <button class="btn_Look">생김새 알아보기</button>
+          <button class="btn_Synthsis">종합적으로 알아보기</button>
+          <input type="reset" value="다시쓰기">
+        </div>
+      </form>
+      <div class="info">
+        <img src="./img/question.jpg" alt="누구일까요?">
+      </div>
+    </div>
+  </body>
+</html>
