@@ -21,3 +21,4 @@ ul{list-style: none;}
 .tab3{display:flex;}
 .tab3 > li {padding:6px 14px;border:1px solid black;}
 .des3{border:1px solid orange;min-height:200px;} /*height: 기본 값은 auto, 넘치면 흘러넘침, min-height:평상시 200px 유지 넘어서면 맞춰서 늘어남*/
+.tab3 > li.act{background:orange;color:white;}
